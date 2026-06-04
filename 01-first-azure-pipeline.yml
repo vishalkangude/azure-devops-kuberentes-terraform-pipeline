@@ -21,6 +21,13 @@ jobs:
       displayName: 'Run a multi-line script'
  
  - job : Job2
+   DependsOn : Job1
    steps:
     - script: echo Job2!
-      displayName: 'Run a one-line script'
+      displayName: 'Run a one-line script in Job2'
+
+ - job : Job3
+   DependsOn : Job1
+   steps:
+    - script: echo Job3!
+      displayName: 'Run a one-line script in Job3'
