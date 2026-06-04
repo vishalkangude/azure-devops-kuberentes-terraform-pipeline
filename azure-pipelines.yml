@@ -22,7 +22,7 @@ stages:
   jobs:
    - job: DevDeployJob
      steps:
-     - bash : echo $(PipelineLevelVariable)Deploy
+     - bash : echo $(environment)Deploy
 
 - stage : QADelpoy
   variables :
@@ -31,7 +31,7 @@ stages:
   jobs:
    - job: QADelpoyJob
      steps:
-     - bash : echo $(PipelineLevelVariable)Delpoy
+     - bash : echo $(environment)Delpoy
      
 - stage : ProdDeploy
   variables :
@@ -42,4 +42,4 @@ stages:
   jobs:
    - job: ProdDeployJob
      steps:
-     - bash : echo $(PipelineLevelVariable)Deploy
+     - bash : echo $(environment)Deploy
