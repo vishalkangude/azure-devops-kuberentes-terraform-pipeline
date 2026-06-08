@@ -26,7 +26,7 @@ steps:
     commandOptions: '-var client_id=$(client_id) -var client_secret=$(client_secret) -var ssh_public_key=$(publickey.secureFilePath)'
     backendAzureRmUseEntraIdForAuthentication: false
     backendServiceArm: 'azure-resource-manager'
-    backendAzureRmResourceGroupName: 'terrafrom-backend-rg'
-    backendAzureRmStorageAccountName: 'storagevishback83'
+    backendAzureRmResourceGroupName: 'kubernetes-rg'
+    backendAzureRmStorageAccountName: 'kubernetestoragevishal'
     backendAzureRmContainerName: 'storageaccountcontainer'
     backendAzureRmKey: 'kubernetes-dev.tfstate'
