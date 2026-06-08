@@ -9,6 +9,7 @@ steps:
   displayName: 'Run a one-line script'
 
 - task: TerraformInstaller@1
+  displayName: 'Install Terraform CLI'
   inputs:
     terraformVersion: 'latest'
 
