@@ -8,10 +8,10 @@ steps:
 - script: echo K8s Azure Terraform !
   displayName: 'Run a one-line script'
 
-# - task: TerraformInstaller@1
-#   displayName: 'Install Terraform CLI'
-#   inputs:
-#     terraformVersion: 'latest'
+- task: TerraformInstaller@1
+  displayName: 'Install Terraform CLI'
+  inputs:
+    terraformVersion: 'latest'
 
 - task: DownloadSecureFile@1
   name: publickey
