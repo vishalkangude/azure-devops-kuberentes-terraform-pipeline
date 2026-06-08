@@ -16,17 +16,17 @@ resource "azurerm_resource_group" "resource_group" {
 }
 
 resource "azurerm_storage_account" "storage_account" {
-  name                     = "${var.environment}terraformstatestorage"
+  name                     = "${var.environment}tfstorage"
   location                 = var.location
   resource_group_name      = azurerm_resource_group.resource_group.name
   account_tier             = "Standard"
-  account_replication_type = "LRS"
+  account_replication_type = "ZRS"
   tags = {
     environment = var.environment
   }
 }
 
 resource "azurerm_storage_container" "storage_container" {
-  name                  = "${var.environment}terraformstatestoragecontainer"
-  storage_account_name  = azurerm_storage_account.storage_account.name
+  name                  = "${var.environment}tfstoragecontainer"
+  storage_account_id  = azurerm_storage_account.storage_account.id
 }
