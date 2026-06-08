@@ -7,7 +7,7 @@ variable environment {
 }
 
 variable location {
-    default = "east us"
+    default = "west us"
 }
 
 variable node_count {
@@ -28,6 +28,6 @@ variable resource_group {
 
 #ssh_public_key = "C:\\Users\\Vishal\\.ssh\\id_rsa.pub"
 
-variable ssh_public_key {
-  default = "C:\\Users\\Vishal\\.ssh\\azure_rsa.pub"
-}
+# variable ssh_public_key {
+#   default = "C:\\Users\\Vishal\\.ssh\\azure_rsa.pub"
+# }
