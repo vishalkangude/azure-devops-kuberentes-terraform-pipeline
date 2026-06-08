@@ -14,8 +14,6 @@ variable node_count {
   default = 3
 }
 
-
-
 variable dns_prefix {
   default = "k8stest"
 }
@@ -26,4 +24,10 @@ variable cluster_name {
 
 variable resource_group {
   default = "kubernetes"
+}
+
+#ssh_public_key = "C:\\Users\\Vishal\\.ssh\\id_rsa.pub"
+
+variable ssh_public_key {
+  default = "C:\\Users\\Vishal\\.ssh\\azure_rsa.pub"
 }
